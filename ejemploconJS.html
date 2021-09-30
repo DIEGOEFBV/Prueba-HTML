@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <ul>
+        <li>Menú</li>
+            <ul>
+                <li><a href="file:///C:/Users/diego/Documents/WorkSpaceHTML/intro-html/index.html?name=diego&surname=Florez&comment=esto+es+un+comentario#menu">Ir a Inicio</a></li>
+                <li><a href="file:///C:/Users/diego/Documents/WorkSpaceHTML/intro-html/blog.html?name=diego&surname=Florez&comment=esto+es+un+comentario#menu" >Ir a Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+    <title>Javascript</title>
+    <script type="text/javascript">
+        function showName(n)
+        {
+            document.getElementById("message").innerHTML = n; // es una variable especial de JS que carga todo el body
+                                                         // es el texto interno de una etiqueta, la etiqeuta es getElementById con el message
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Titulo de mi proyecto JS</h1>
+    <p>Este es mi proyecto de prueba...</p>
+    <p id="message">Cargando...</p>
+    <script>
+        showName("Diego")
+    </script>
+
+</body>
+</html>
