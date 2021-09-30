@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Blog</title>
-</head>
+    <meta charset="utf-8">
+    
 <body>
+    <div>
+        <ul>
+            <li>Menú</li>
+                <ul>
+                    <li>
+                        <a href="file:///C:/Users/diego/Documents/WorkSpaceHTML/intro-html/index.html?name=diego&surname=Florez&comment=esto+es+un+comentario#menu">Ir a Inicio</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</head>
+    <head>
+        <title>Blog</title>
+    </head>
     <header>
-        <h1>Blog de HTML</h1>
+        <h1 id="title">Blog de HTML</h1> <!-- este id tiene un atributo llamado title que nos servirá para interactuar con JS o para asignar un estilo-->
     </header> <!-- head sirve para agrupar links, imagens o logos de la pagina, se pueden tener muchos headers pero-->
                         <!-- tiene 2 reglas, no sepueden poner headers dentro de headers o dentro de footer-->
+    <div> <!-- div lo que hace es contener un contenido y tiene la misma funcionalidad de section para dividir contenido y agruparlo en secciones-->
+        <p>Soy un parrafo dentro de un div</p>
+    </div>
     <section>
-        <article> <!-- article para idendificar de manera independiente, para poner post, descripciones, comentarios, historias de noticias, para enmarcar una publicación-->
+        <article class="post"> <!-- article para idendificar de manera independiente, para poner post, descripciones, comentarios, historias de noticias, para enmarcar una publicación-->
            <h2>Post 1</h2> 
-           <p>Definicion</p>
+           <p>Definición</p>
            <img src="images/netflix.png" width="400" />
            <p>Texto de prueba de la imagen post 1  </p>
         </article> 
-        <article> 
+        <article class="post"> <!-- nos sirve para identifar estos elementos con selectores-->
             <h2>Post 2</h2> 
-            <p>Definicion</p>
-            <img src="images/google.png" width="100" height="100" />
+            <p>Definición</p>
+            <img src="images/google.png" width="400" />
             <p>Texto de prueba de la imagen post 2  </p>
          </article>
     </section> <!--definir secciones de nuestra app y poner etiquetas que queramos-->
-    <footer> </footer> <!-- pie de pagina, por lo general contienen el copyright, info del sitio, links para volver al inicio, quienees somos, direccion etc-->
+    <footer> <!-- pie de pagina, por lo general contienen el copyright, info del sitio, links para volver al inicio, quienees somos, direccion etc--> 
+        <a href="#menu">Ir a inicio</a>
+        <a href="mailto:diego@gmail.com">Contactame</a>
+        <p>Copyright 2021</p>
+    </footer> 
 
 </body>
 </html>

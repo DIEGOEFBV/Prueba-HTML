@@ -2,6 +2,16 @@
                 <!-- si no se pone no se interporeta de la amenra correcta y entraria en modo Quirks-->                                                                                                          
 <html lang="en"> <!-- todo doc html tendrá está etuqieta, pero por el mmomento no nos interesa-->
 <head> <!--Indica el titulo de la pagina web-->
+    <div>
+        <ul>
+            <li>Menú</li>
+            <ul>
+                <li>
+                    <a href="file:///C:/Users/diego/Documents/WorkSpaceHTML/intro-html/blog.html?name=diego&surname=Florez&comment=esto+es+un+comentario#menu" >Ir a Blog</a>
+                </li>
+            </ul>
+        </ul>
+    </div>
     <title>Mi primer Blog</title> <!-- nombre de la pestaña-->
      <!-- este style tiene queir dentro del head y significa que a tale, th y td se le aplicarán los estilos que estend entro de las llaves{}-->
     <style> 
@@ -12,6 +22,7 @@
     </style>
 </head>
 <body>
+    
     <table style="width: 500px;">
         <thead> <!-- thead sirve para que podamos agrupar que se encuentran en las cabeceras de nuestras tablas, tambien podemos tener mas para agrupar cabeceras-->
             <tr><!-- tablerow - filas-->
@@ -72,7 +83,7 @@
     <input value="diego" type="text" id="name" name="name" placeholder="Nombre..."/> <!-- name sirve para que algun servidor interprete los-->
     <br>
     <label for="surname">Apellido</label>
-    <input value="flórez" type="text" id="surname" name="surname" placeholder="Apellido..."> 
+    <input type="text" id="surname" name="surname" placeholder="Apellido..."> 
     <br>
     <label for="comment">Comentario</label>
     <br>
